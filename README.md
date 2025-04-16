@@ -5,10 +5,10 @@ Guide to Pivoting with sshuttle and chisel
 Attacker (Kali, 1.1.1.1)
 │
 └── Hop 1: Web server (10.0.0.5, accessible from the Internet)
-│
-└── Hop 2: Internal host (192.168.1.10, accessible only from 10.0.0.0/24)
-│
-└── Hop 3: Target server (172.16.0.20, accessible only from 192.168.1.0/24)
+ │
+ └── Hop 2: Internal host (192.168.1.10, accessible only from 10.0.0.0/24)
+  │
+  └── Hop 3: Target server (172.16.0.20, accessible only from 192.168.1.0/24)
 ```
 ---
 # 1. Pivoting via Chisel (SOCKS5 tunnels)
