@@ -11,10 +11,10 @@ Attacker (Kali, 1.1.1.1)
 └── Hop 3: Target server (172.16.0.20, accessible only from 192.168.1.0/24)
 ```
 ---
-# 1. Pivoting via Chisel (HTTP tunnels)
+# 1. Pivoting via Chisel (SOCKS5 tunnels)
 
 **How ​​it works:**
-- **Tunneling via HTTP/HTTPS**, similar to SSH, but works as a reverse proxy.
+- **Tunneling via SOCKS5**, similar to SSH, but works as a reverse proxy.
 - The client connects to the server and opens **SOCKS5 or ports** to access the inside network.
 - Suitable for **bypassing firewalls**, as it uses standard ports (80, 443).
 
