@@ -16,7 +16,7 @@ Attacker (Kali, 1.1.1.1)
 **How ​​it works:**
 - **Tunneling via SOCKS5**, similar to SSH, but works as a reverse proxy.
 - The client connects to the server and opens **SOCKS5 or ports** to access the inside network.
-- Suitable for **bypassing firewalls**, as it uses standard ports (80, 443).
+- Suitable for **bypassing firewalls**, if it uses standard web ports (80, 443).
 
 **Example command:**
 On the server (attacker):
